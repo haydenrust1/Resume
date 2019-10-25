@@ -1,2 +1,2 @@
 # Web-Development-
-web development practice: resume
+This is an example of my skills with HTML and CSS in the form of a resume.
