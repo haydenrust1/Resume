@@ -1,0 +1,244 @@
+/*Color Palette
+#326273: myrtle green
+#56A3A6: cadet blue
+#E2512D: Flame
+#E5BC89: Pale Gold
+#DDFDFF: light cyan
+----------------------*/
+
+/*Global Syles
+----------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #DDFDFF;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+h2 {
+    margin-top: 0;
+}
+h3 {
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    }
+a:hover {
+    text-decoration: none;
+}
+.wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+    
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.btn {
+    text-decoration: none;
+    background: #E2512D;
+    color: #DDFDFF;
+    display: inline-block;
+    padding: 10px;
+    animation: animated-div 3s ease-out 1s 1;
+}
+
+/*Header and Footer Syles
+----------------------*/
+header {
+    background: #326273;
+    color: #DDFDFF;
+    padding-top: 50px;
+    position: relative;
+}
+header h1 {
+    color: #E2512D;
+    font-size: 80px;
+}
+header h1, header h2 {
+    margin: 0;
+}
+.profile-img {
+    border-radius: 50%;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+footer {
+    background: #E5BC89;
+    text-align: center;
+}
+footer h2 {
+    color: #56A3A6;
+}
+footer a {
+    color: black;
+    background: #DDFDFF;
+    margin: 1px;
+    display: inline-block;
+}
+/*contact link styles*/
+.fa-envelope-square {
+    font-size: 40px;
+}
+
+/* figure out animations for contact links
+-------------------------------------------
+.slide-left {
+    animation: bounce 1.5s ease-out 1s 1;
+}
+   
+@keyframes bounce{
+    0% {
+        left: 100px;
+    }
+    50% {
+        left: 0px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+---------------------------------------*/
+
+.fa-twitter-square {
+    font-size: 40px;
+}
+.fa-linkedin {
+    font-size: 40px;
+}
+.fa-facebook-square {
+    font-size: 40px;
+}
+.contact-links a {
+    padding: 10px;
+}
+
+/*Navigation Styles
+----------------------*/
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: black; 
+    font-weight: 700px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+/*Work Experience Styles
+----------------------*/
+.work {
+    background: #56A3A6; 
+}
+.work h2 {
+    color: #E5BC89;
+}
+h3~p {
+    margin: 0;
+}
+.job-description h3,ul:first-of-type{
+    margin-top: 0;
+}
+/*Education Syles
+----------------------*/
+.education {
+/*    background: #E2512D;*/
+    background: linear-gradient(rgba(226, 81, 45,0.7), rgba(226, 81, 45,0.0)), 
+                url(../images/jeremy-bishop-OXMX3R0KKx0-unsplash-v2.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/*Media Queries
+----------------------*/
+@media (min-width: 900px){
+    .column-narrow {
+    width: 30%;
+    float: left;
+    }
+.column-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    }
+}
+@media (max-width: 899px){
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
+}
+
+/*Key Frames & Animations 
+--------------------------------*/
+@keyframes animated-div {
+    0% {
+        transform: rotate(0deg);
+        right: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        right: 0px;
+    }
+    50% {
+        transform: rotate(-20deg);
+        right: 500px;
+    }
+    55% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+    70% {
+        transform: rotate(0deg);
+        right: 500px;
+    }
+    100% {
+        transform: rotate(-360deg);
+        right: 0px;
+    }
+}
+/*
+@keyframes bounce{
+    0% {
+        left: 50px;
+    }
+    50% {
+        left: 0px;
+    }
+    100%{
+        left: 50px;
+    }
+}
+@keyframes slide-right{
+    
+}
+@keyframes move-up{
+    
+}
+@keyframes move-down{
+    
+}
+*/
+
+
